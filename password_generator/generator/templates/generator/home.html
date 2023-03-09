@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container text-center">
-        <h1>Password Generator</h1>
+        <h1>Генератор Паролей</h1>
 
         <form action="{% url 'password' %}">
             <select name="length">
@@ -16,19 +16,19 @@
                 <option value="7">7</option>
                 <option value="8" selected="selected">8</option>
                 <option value="9">9</option>
-            </select> Length
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+            </select> Длина пароля
 
             <br>
-                <input type="checkbox" name="uppercase"> Uppercase
-            <br>
-            <br>
-                <input type="checkbox" name="numbers"> Numbers
-            <br>
-            <br>
-                <input type="checkbox" name="specials"> Special Characters
+                <input type="checkbox" name="uppercase"> Верхний регистр
+                <input type="checkbox" name="numbers"> Цифры
+                <input type="checkbox" name="specials"> Специальные символы
             <br>
 
-            <input type="submit" value="Generate Password" class="btn btn-primary">
+            <input type="submit" value="Сгенерировать Пароль" class="btn btn-primary">
         </form>
         <a href="{% url 'about' %}" class="btn btn-warning">О нас</a>
     </div>
